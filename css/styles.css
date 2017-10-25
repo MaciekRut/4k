@@ -1,0 +1,48 @@
+h1 {
+  font-size: 3rem;
+  line-height: 1.5em;
+  text-align: center; }
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 80%;
+  margin: auto; }
+
+h1 > div:nth-child(1) {
+  color: white; }
+
+h1 > div:nth-child(2) {
+  color: red; }
+
+h1 > div:nth-child(3) {
+  color: #99cc33; }
+
+h1 > div {
+  opacity: 0; }
+
+.jumbotron {
+  background-image: url("../img/sky.jpg");
+  border-radius: 0px; }
+
+.jumbotron > .container > .row {
+  max-width: 600px;
+  margin: auto; }
+
+.navbar-brand {
+  padding: 0; }
+
+.nav-link {
+  font-size: 1.4em; }
+
+.btn:hover {
+  color: #fff !important; }
+
+.btn-outline-primary {
+  color: #007bff !important; }
+
+.btn-outline-success {
+  color: #28a745 !important; }
+
+.btn-outline-warning {
+  color: #ffc107 !important; }
