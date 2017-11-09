@@ -1,12 +1,15 @@
 
 $purple: rgb(179, 62, 218);
-$blue: #42b4d6;
+$light-purple: rgba(203, 163, 217, 0.17);
+$blue: #42B4D6;
 $light-blue: rgba(96, 171, 218, 0.59);
-$orange: #ea8b02;
+$orange: #EC8F36;
+$green: #5FCF80;
+$light-green: rgba(202, 255, 218, 0.37);
 
 
 body {
-	font-family: lato;
+	font-family:  'Montserrat', sans-serif;
 }
 
 .navbar-brand {
@@ -21,7 +24,7 @@ h1 {
     font-size: 3rem;
     font-weight:300;
     position: absolute;
-	padding: 100px 50px;
+	padding: 100px 15px;
 }
 
 h1 > div {
@@ -33,11 +36,12 @@ h1 > div {
 h1 > div:nth-child(3) {
     background-color: transparent;
     font-size: 0.7em;
-    padding: 50px 0px 0px 0px !important;
+    padding: 50px 0px 0px 105px !important;
 }
 
 h1 > div > a {
 	color:black !important;
+	text-decoration:underline;
 }
 
 h1 > div > a:hover {
@@ -53,43 +57,102 @@ main > section:nth-child(2) > .container {
 	background-color: $orange;
 }
 
+main > section:nth-child(3)> .container > .row > .col-lg-5 {
+	background-color:$light-purple;
+}
+
+main > section:nth-child(3)> .container > .row > .col-lg-7 {
+	background-color:$light-green;
+}
+
 .container > .row > div {
 	font-size: 1.7rem;
+}
+
+.carousel-item > img {
+	width: 180px !important;
 }
 
 .banner-left {
 	position:relative;
 	background: url(../img/banner-main-left.jpg) fixed;
-    min-height: 530px;
+    min-height: 500px;
+    max-width: 1350px;
 }
 
 .banner-right {
 	position:relative;
 	background-color: $blue;
-    min-height: 530px;
+    min-height: 500px;
 }
 
 .card {
-	border-radius:0px;
+    border: none;
+}
+
+.card-body {
+    background-color: #ec8f36;
+    font-size: 0.6em;
 }
 
 .card-img {
-    filter: brightness(35%);
+    filter: brightness(90%);
+}
+
+.card .btn {
+	color: #fff;
+    background-color: transparent;
+    border-color: #fcfcfc;
+    border-radius: 0px;
+    width: 20%;
+    font-size: 2em;
+}
+
+.col-lg-5 > .row:nth-child(1) > div:nth-child(2) > div,
+.col-lg-5 > .row:nth-child(2) > div:nth-child(1) > div {
+	background-color: $purple;
 }
 
 .showme {
 	opacity:0;
 }
 
-footer > div {
+.form {
+    width: 80%;
+}
+
+.form-control {
+	border-radius:0px;
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+form > .btn,
+form > .btn:hover {
+    border-radius: 0px;
+    background-color: $green;
+    border: none;
+    font-size: 1.5em;
+}
+
+footer > div:nth-child(1) {
     position: fixed;
     bottom: 10px;
     right: 10px;
 }
 
-.fa-arrow-circle-up {
-    color: white;
+footer p > a {
+	color:gray;
+	font-size:0.5em;
 }
+
+.fa-chevron-circle-up {
+    color: white;
+
+}
+#link-to-menu {
+	display:none;
+}
+
 
 
 

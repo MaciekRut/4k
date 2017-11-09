@@ -75,16 +75,18 @@ $(document).ready(function() {
     
 });
 
-//pojawianie się powrotu do menu po srollowaniu strony i kliknięciu w dowolny link, 
+//pojawianie się powrotu do menu po scrollowaniu strony i kliknięciu w dowolny link, 
 //bo on scrolluje stronę
 
 $(document).scroll( function() { 
   $("#link-to-menu").show();
   });
 
-//hover h2 na img
 
-var h2s = document.getElementsByTagName("h2");
+
+//hover na img oferta
+
+var h2s = document.getElementsByClassName("hover");
   for (i=0; i<h2s.length; i++) {
     h2s[i].onmouseover = focus(h2s[i]);
     h2s[i].onmouseleave = defocus(h2s[i]);
@@ -92,14 +94,17 @@ var h2s = document.getElementsByTagName("h2");
   }
 function focus(element) {
   return function() {
-  element.style.background = "rgba(179, 62, 218, 0.56)";
+  element.style.background = "rgba(22, 22, 26, 0.64)";
+  //element.style.border = "30px solid black";
   }
 }
 function defocus(element) {
   return function() {
   element.style.background = "none";
+  //element.style.border = "none";
   }
 }
+
 
 //cookies
 
@@ -138,6 +143,11 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+
+$("#carouselExampleSlidesOnly").carousel({
+  interval: 1200
+})
+
 
 
 
