@@ -2,7 +2,7 @@
 $purple: rgb(179, 62, 218);
 $light-purple: rgba(203, 163, 217, 0.17);
 $blue: #42B4D6;
-$light-blue: rgba(96, 171, 218, 0.59);
+$light-blue: rgb(222, 238, 248);
 $orange: #EC8F36;
 $green: #5FCF80;
 $light-green: rgba(202, 255, 218, 0.37);
@@ -17,11 +17,12 @@ body {
 }
 
 .nav-item > .nav-link {
-	font-size: 1.7em;
+    font-size: 1.5em;
+    color: #c0b3b3;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight:300;
     position: absolute;
 	padding: 100px 15px;
@@ -30,13 +31,13 @@ h1 {
 h1 > div {
 	background-color: $light-blue;
 	opacity:0;
-	padding: 10px;
+	padding: 16px;
 }
 
 h1 > div:nth-child(3) {
     background-color: transparent;
     font-size: 0.7em;
-    padding: 50px 0px 0px 105px !important;
+    padding: 50px 0px 0px 0px !important;
 }
 
 h1 > div > a {
@@ -53,9 +54,9 @@ h1 > div > a:hover {
     margin:0; 
 }
 
-main > section:nth-child(2) > .container {
+/*main > section:nth-child(2) > .container {
 	background-color: $orange;
-}
+}*/
 
 main > section:nth-child(3)> .container > .row > .col-lg-5 {
 	background-color:$light-purple;
@@ -95,6 +96,10 @@ main > section:nth-child(3)> .container > .row > .col-lg-7 {
     font-size: 0.6em;
 }
 
+.card > div:nth-child(3) {
+	font-size:0.7em;
+}
+
 .card-img {
     filter: brightness(90%);
 }
@@ -106,6 +111,17 @@ main > section:nth-child(3)> .container > .row > .col-lg-7 {
     border-radius: 0px;
     width: 20%;
     font-size: 2em;
+}
+
+.row > .col-md-4 > .card > .img-cover > div:hover {
+	opacity:1;
+}
+
+.row > .col-md-4 > .card > .img-cover > div {
+	font-size:0.7em;
+	opacity:0; 
+	background-color: black;
+	-webkit-transition: all 1s ease; transition: all 1s ease;
 }
 
 .col-lg-5 > .row:nth-child(1) > div:nth-child(2) > div,

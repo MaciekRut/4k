@@ -82,29 +82,23 @@ $(document).scroll( function() {
   $("#link-to-menu").show();
   });
 
+// //hover na img oferta
 
-
-//hover na img oferta
-
-var h2s = document.getElementsByClassName("hover");
-  for (i=0; i<h2s.length; i++) {
-    h2s[i].onmouseover = focus(h2s[i]);
-    h2s[i].onmouseleave = defocus(h2s[i]);
-
-  }
-function focus(element) {
-  return function() {
-  element.style.background = "rgba(22, 22, 26, 0.64)";
-  //element.style.border = "30px solid black";
-  }
-}
-function defocus(element) {
-  return function() {
-  element.style.background = "none";
-  //element.style.border = "none";
-  }
-}
-
+// var imgs = document.getElementsByClassName("img-cover");
+//   for (i=0; i<imgs.length; i++) {
+//     imgs[i].onmouseover = focus(imgs[i]);
+//     imgs[i].onmouseleave = defocus(imgs[i]);
+//   }
+// function focus(element) {
+//   return function() {
+//   element.style.background = "rgba(22, 22, 26, 0.64)";
+//   }
+// }
+// function defocus(element) {
+//   return function() {
+//   element.style.background = "none";
+//   } 
+// }
 
 //cookies
 

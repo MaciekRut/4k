@@ -5,23 +5,24 @@ body {
   padding: 0; }
 
 .nav-item > .nav-link {
-  font-size: 1.7em; }
+  font-size: 1.5em;
+  color: #c0b3b3; }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
   position: absolute;
   padding: 100px 15px; }
 
 h1 > div {
-  background-color: rgba(96, 171, 218, 0.59);
+  background-color: #deeef8;
   opacity: 0;
-  padding: 10px; }
+  padding: 16px; }
 
 h1 > div:nth-child(3) {
   background-color: transparent;
   font-size: 0.7em;
-  padding: 50px 0px 0px 105px !important; }
+  padding: 50px 0px 0px 0px !important; }
 
 h1 > div > a {
   color: black !important;
@@ -34,9 +35,9 @@ h1 > div > a:hover {
   max-width: 100%;
   margin: 0; }
 
-main > section:nth-child(2) > .container {
-  background-color: #EC8F36; }
-
+/*main > section:nth-child(2) > .container {
+	background-color: $orange;
+}*/
 main > section:nth-child(3) > .container > .row > .col-lg-5 {
   background-color: rgba(203, 163, 217, 0.17); }
 
@@ -67,6 +68,9 @@ main > section:nth-child(3) > .container > .row > .col-lg-7 {
   background-color: #ec8f36;
   font-size: 0.6em; }
 
+.card > div:nth-child(3) {
+  font-size: 0.7em; }
+
 .card-img {
   filter: brightness(90%); }
 
@@ -77,6 +81,16 @@ main > section:nth-child(3) > .container > .row > .col-lg-7 {
   border-radius: 0px;
   width: 20%;
   font-size: 2em; }
+
+.row > .col-md-4 > .card > .img-cover > div:hover {
+  opacity: 1; }
+
+.row > .col-md-4 > .card > .img-cover > div {
+  font-size: 0.7em;
+  opacity: 0;
+  background-color: black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .col-lg-5 > .row:nth-child(1) > div:nth-child(2) > div,
 .col-lg-5 > .row:nth-child(2) > div:nth-child(1) > div {
