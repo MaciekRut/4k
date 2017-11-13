@@ -1,52 +1,51 @@
-
-$purple: rgb(179, 62, 218);
-$light-purple: rgba(203, 163, 217, 0.17);
 $blue: #42B4D6;
 $light-blue: rgb(222, 238, 248);
-$orange: #EC8F36;
-$green: #5FCF80;
-$light-green: rgba(202, 255, 218, 0.37);
-
+$dark-black: #0e121e;
 
 body {
-	font-family:  'Montserrat', sans-serif;
+	font-family:  'Lato', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight:300;
+    position: absolute;
+	padding: 80px 35px;
+}
+
+h1 > div {
+	opacity:0;
+	padding: 0px 7px 0px 27px;
+}
+
+h2 {
+	width:80%;
+	margin-top:120px;
+}
+
+main > section:nth-child(2) > .container {
+	background-color: black;
 }
 
 .navbar-brand {
 	padding: 0;
 }
 
+.navbar {
+	background-color: black;
+}
+
 .nav-item > .nav-link {
     font-size: 1.5em;
-    color: #c0b3b3;
+    color: white;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight:300;
-    position: absolute;
-	padding: 100px 15px;
-}
-
-h1 > div {
-	background-color: $light-blue;
-	opacity:0;
-	padding: 16px;
-}
-
-h1 > div:nth-child(3) {
-    background-color: transparent;
-    font-size: 0.7em;
-    padding: 50px 0px 0px 0px !important;
-}
-
-h1 > div > a {
-	color:black !important;
-	text-decoration:underline;
-}
-
-h1 > div > a:hover {
-	color:$blue !important;
+.banner-left {
+	position:relative;
+	background: url(../img/banner-main-left.jpg) fixed;
+    min-height: 400px;
+    max-width: 2000px;
 }
 
 .container {
@@ -54,79 +53,60 @@ h1 > div > a:hover {
     margin:0; 
 }
 
-/*main > section:nth-child(2) > .container {
-	background-color: $orange;
-}*/
-
-main > section:nth-child(3)> .container > .row > .col-lg-5 {
-	background-color:$light-purple;
-}
-
-main > section:nth-child(3)> .container > .row > .col-lg-7 {
-	background-color:$light-green;
-}
-
 .container > .row > div {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
-.carousel-item > img {
-	width: 180px !important;
-}
-
-.banner-left {
-	position:relative;
-	background: url(../img/banner-main-left.jpg) fixed;
-    min-height: 500px;
-    max-width: 1350px;
-}
-
-.banner-right {
-	position:relative;
+.carousel-item > p {
 	background-color: $blue;
-    min-height: 500px;
 }
 
-.card {
-    border: none;
+.col-lg-5 > .container {
+	opacity: 0;
 }
 
-.card-body {
-    background-color: #ec8f36;
-    font-size: 0.6em;
+.carousel-inner >.carousel-item:nth-child(1) > p {
+	width:100%;
 }
 
-.card > div:nth-child(3) {
-	font-size:0.7em;
+.carousel-inner >.carousel-item:nth-child(2) > p {
+	width:85%;
 }
 
-.card-img {
-    filter: brightness(90%);
+.carousel-inner >.carousel-item:nth-child(3) > p {
+	width:80%;
 }
 
-.card .btn {
-	color: #fff;
-    background-color: transparent;
-    border-color: #fcfcfc;
-    border-radius: 0px;
-    width: 20%;
-    font-size: 2em;
+.carousel-inner >.carousel-item:nth-child(4) > p {
+	width:50%;
 }
 
-.row > .col-md-4 > .card > .img-cover > div:hover {
-	opacity:1;
+.carousel-inner >.carousel-item:nth-child(5) > p {
+	width:80%;
 }
 
-.row > .col-md-4 > .card > .img-cover > div {
-	font-size:0.7em;
-	opacity:0; 
-	background-color: black;
-	-webkit-transition: all 1s ease; transition: all 1s ease;
+.carousel-inner >.carousel-item:nth-child(6) > p {
+	width:75%;
 }
 
-.col-lg-5 > .row:nth-child(1) > div:nth-child(2) > div,
-.col-lg-5 > .row:nth-child(2) > div:nth-child(1) > div {
-	background-color: $purple;
+.carousel-item > p:nth-child {
+	background-color: $blue;
+}
+
+.carousel {
+	.carousel-item {
+		img {
+		border: 200px solid black;
+		border-top:15px solid black;
+		}
+	}
+}
+
+.carousel-indicators li {
+	text-align: center;
+    width: 200px;
+    text-indent: 0px;
+    color:white;
 }
 
 .showme {
@@ -145,7 +125,6 @@ main > section:nth-child(3)> .container > .row > .col-lg-7 {
 form > .btn,
 form > .btn:hover {
     border-radius: 0px;
-    background-color: $green;
     border: none;
     font-size: 1.5em;
 }
@@ -161,15 +140,32 @@ footer p > a {
 	font-size:0.5em;
 }
 
-.fa-chevron-circle-up {
+.fa-chevron-circle-up,
+.fa-bars {
     color: white;
-
 }
+
 #link-to-menu {
 	display:none;
 }
 
 
 
+/* === widok na XS i SM device === */
+@media (max-width: 767px) {
+	.carousel {
+		.carousel-item {
+			img {
+			border: 84px solid black;
+    		border-top: 15px solid black;
+			}
+		}
+	}
+	.carousel-indicators li {
+	    text-indent: -999px;
+}
 
 
+
+
+}
