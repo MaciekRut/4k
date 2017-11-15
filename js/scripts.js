@@ -4,9 +4,7 @@
 $(document).ready(function(){ 
     $("h1 div:nth-child(1)").animate({'opacity':'1'},1000, function() {
     	$("h1 div:nth-child(2)").animate({'opacity':'1'},500, function() {
-			$("h1 div:nth-child(3)").animate({'opacity':'1'},300, function() {
-				$(".col-lg-5 >.container").animate({'opacity':'1'},100 );
-				});
+			$("h1 div:nth-child(3)").animate({'opacity':'1'},300);
 	    });    
 	 });
 });  
