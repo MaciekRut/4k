@@ -5,6 +5,7 @@ body {
 	background-color: black;
 }
 
+
 h1 {
     font-size: 3.5rem;
     font-weight: 300;
@@ -26,7 +27,7 @@ h1 >div:nth-child(3) {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 a > span {
@@ -44,6 +45,10 @@ a > span {
     color: white;
 }
 
+.fa-bars {
+    color: white;
+}
+
 .banner {
 	position:relative;
 	background: url(../img/banner-main-bottom.jpg) fixed;
@@ -53,7 +58,7 @@ a > span {
 .banner-reverse {
   	position:relative;
   	background: url(../img/banner-main-reverse.jpg) fixed;
-    min-height: 500px;
+    min-height: 450px;
 }
 
 main > section:nth-child(1) > div {
@@ -162,13 +167,15 @@ footer p > a {
 	font-size:1em;
 }
 
-.fa-chevron-circle-up,
-.fa-bars {
-    color: white;
+footer > .container  {
+	position: relative;
+	z-index:-1;
 }
 
-#link-to-menu {
-	display:none;
+.fa-chevron-circle-up {
+    color: white;
+    position: absolute;
+    z-index: 2;
 }
 
 /* === widok na MD device === */
@@ -203,7 +210,7 @@ footer p > a {
 		padding: 25px;
 	}
 	.banner-reverse {
-	    min-height: 430px;
+	    min-height: 400px;
 	}
 	footer p > a {
 	font-size: 4vw;

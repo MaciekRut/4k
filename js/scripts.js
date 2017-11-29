@@ -20,6 +20,21 @@ $(function () {
     });
 });
 
+// odkrywanie strzałki do menu
+
+$(document).scroll(function() {
+  if ($("#menu").visible(false)) {
+        $("#link-to-menu").hide();
+    }
+  else {
+        $("#link-to-menu").show();
+    }
+});
+
+$("#carouselExampleIndicators").carousel({
+  interval:5000
+});
+
 //scrollowanie z "a" do target element
 
 $(document).ready(function(){ 
@@ -73,31 +88,6 @@ $(document).ready(function() {
     
 });
 
-//pojawianie się powrotu do menu po scrollowaniu strony i kliknięciu w dowolny link, 
-//bo on scrolluje stronę
-
-$(document).scroll( function() { 
-  $("#link-to-menu").show();
-  });
-
-// //hover na img oferta
-
-// var imgs = document.getElementsByClassName("img-cover");
-//   for (i=0; i<imgs.length; i++) {
-//     imgs[i].onmouseover = focus(imgs[i]);
-//     imgs[i].onmouseleave = defocus(imgs[i]);
-//   }
-// function focus(element) {
-//   return function() {
-//   element.style.background = "rgba(22, 22, 26, 0.64)";
-//   }
-// }
-// function defocus(element) {
-//   return function() {
-//   element.style.background = "none";
-//   } 
-// }
-
 //cookies
 
 function Close() {
@@ -135,13 +125,3 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
-$("#carouselExampleSlidesOnly").carousel({
-  interval: 800
-})
-
-
-
-
-
-
